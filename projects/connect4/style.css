@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    font-family: "Balsamiq Sans", cursive;
+    font-size: 2rem;
+    text-align: center;
+    color: #6b2439;
+
+    background-color: floralwhite;
+}
+
+#board {
+    display: flex;
+}
+
+.players {
+    display: flex;
+    flex-direction: column;
+    border: indigo 2px solid;
+    text-align: center;
+    margin-right: 1%;
+    width: 15%;
+}
+
+.score1,
+.score2 {
+    min-height: 3rem;
+    padding: 10px 5px 5px 5px;
+}
+
+#player1 {
+    border-width: 0 0 1px 0;
+}
+
+#player2 {
+    border-width: 1px 0 1px 0;
+}
+
+#player2,
+#player1 {
+    border-style: solid;
+    padding: 10px 5px;
+}
+
+.yourTurn {
+    background-color: #eabfcb;
+    font-size: 2.5rem;
+}
+
+.game-container {
+    width: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-again {
+    animation-name: twist;
+    animation-duration: 2s;
+}
+
+@keyframes twist {
+    from {
+        background-color: indigo;
+        transform: rotate(0deg);
+    }
+
+    to {
+        background-color: inherit;
+        transform: rotate(360deg);
+    }
+}
+
+.slot {
+    height: 100px;
+    width: 100px;
+    overflow: hidden;
+}
+
+.hole {
+    height: 80px;
+    width: 80px;
+    transform: translate(-30px, -30px);
+    border-radius: 50%;
+    border: 40px solid indigo;
+}
+
+.player1 {
+    background-color: #e63d0f;
+}
+
+.player2 {
+    background-color: #14cc98;
+}
+
+.announce {
+    margin-left: 1%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: center;
+    border: indigo 2px solid;
+    width: 15%;
+}
+
+#victory {
+    padding-top: 15px;
+    text-align: center;
+    font-size: 2rem;
+    width: 100%;
+    min-height: 100px;
+}
+
+.victory1 {
+    background-color: #f79d84;
+    color: #e63d0f;
+}
+
+.victory2 {
+    background-color: #14cc98;
+    color: #074d39;
+}
+
+button {
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    border-color: inherit;
+    border-width: 2px 0 0 0;
+    border-style: solid;
+    padding: 10px 5px;
+    background-color: #eabfcb;
+}
+
+button:focus,
+button:hover {
+    outline: none;
+    background-color: #cd6582;
+}

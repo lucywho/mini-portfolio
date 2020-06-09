@@ -1,0 +1,27 @@
+
+
+
+<div id="navbar">
+    
+        {{>projlist}} 
+        
+    
+</div>
+
+<a href='./{{directory}}' target="_blank" >
+<h1>{{selectedProject.title}}</h1>
+
+<div id="desc-content">
+    <img src="/{{selectedProject.directory}}/screenshot.png"  id="large">
+
+    <h3>{{selectedProject.description}}</h3>
+
+
+    <p>Click to open the {{selectedProject.title}} project in a new tab</p>
+    </a>
+     
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+

@@ -1,0 +1,18 @@
+
+    <ul>{{#projects}}
+        <div id="project">
+            
+                <a href="/{{directory}}/description"> 
+                
+                   <div> <li>{{title}}</li> </div>
+                    <div><image id="screenshot" src="/{{directory}}/screenshot.png"></image></div>
+                </a>
+            
+        
+       
+        </div>
+        {{/projects}}
+       {{#if selectedProject}}<div id="home"> <a href="/" >Home</a></div>{{/if}}
+        
+    </ul>
+    

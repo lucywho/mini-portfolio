@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+}
+
+#kitties {
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+}
+
+#kitties img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /*controls how an image should fit in its container, avoids stretching.*/
+    transform: translateX(
+        100%
+    ); /*moves images 100% to the right, i.e. off screen*/
+}
+
+#kitties img.onscreen {
+    /*can also use .onscreen but this would apply to every element with .onscreen class, this is more specific */
+    transform: translateX(0);
+    transition-property: transform;
+    transition-duration: 3s;
+}
+
+#kitties img.offscreen-left {
+    transform: translateX(-100%);
+    transition-property: transform;
+    transition-duration: 3s;
+}
+
+.dot {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 2px white solid;
+    margin: 0 20px;
+}
+
+#dots {
+    position: absolute;
+    bottom: 75px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.fill-in {
+    background: white;
+}
+
+@media screen and (min-width: 320px) and (max-width: 570px) {
+    #kitties {
+        height: 300px;
+    }
+
+    #dots {
+        bottom: 450px;
+    }
+
+    .dot {
+        width: 10px;
+        height: 10px;
+    }
+}
+
+@media screen and (min-width: 544px) and (max-width: 770px) {
+    #kitties {
+        height: 300px;
+    }
+
+    #dots {
+        bottom: 390px;
+    }
+
+    .dot {
+        width: 15px;
+        height: 15px;
+    }
+}

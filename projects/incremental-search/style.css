@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    background: linear-gradient(lightblue, lightyellow, lightgreen);
+}
+
+#picture img {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    opacity: 50%;
+    z-index: -1;
+}
+
+#search {
+    grid-area: 2 / 2 / 3 / 3;
+    position: relative;
+    width: 100%;
+}
+
+.highlight {
+    color: powderblue;
+    background-color: darkblue;
+}
+
+input {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(209, 222, 226);
+    border: darkblue 5px solid;
+    left: -5px;
+    color: darkblue;
+
+    font-size: 30px;
+    text-align: center;
+}
+input:focus,
+select:focus {
+    outline: none;
+}
+
+.invitation {
+    position: relative;
+    grid-area: 1 / 2 / 2 / 3;
+    color: darkblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 35%;
+}
+
+#results {
+    position: relative;
+    height: auto;
+    width: 100%;
+    border: darkblue 5px solid;
+    background-color: bisque;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: darkblue;
+    border-top: 0;
+    left: -5px;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+em {
+    color: gray;
+    margin: 5px;
+}
+
+footer {
+    position: fixed;
+    bottom: 5px;
+    left: 5px;
+    font-size: 12px;
+}

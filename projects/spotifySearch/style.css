@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    background-color: whitesmoke;
+    padding: 10px;
+    font-family: "Raleway", sans-serif;
+}
+#main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+.title {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+    color: darkslategray;
+}
+
+.user-input {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+input {
+    min-width: 500px;
+    height: 40px;
+    font-size: 25px;
+    color: darkslategray;
+    padding: 5px;
+    margin: 0 30px 10px 0;
+    box-shadow: 5px 5px 5px grey;
+    border: grey 1px solid;
+}
+
+select,
+option,
+button {
+    height: 40px;
+    font-size: 25px;
+    color: darkslategray;
+    background-color: gainsboro;
+    box-shadow: 5px 5px 5px grey;
+    border: grey 1px solid;
+    padding: 5px;
+    margin: 0 30px 10px 0;
+    width: fit-content;
+    font-family: inherit;
+}
+
+em {
+    color: grey;
+}
+
+#results {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#results-header {
+    font-size: 25px;
+    font-style: italic;
+    color: darkslategray;
+    padding: 5px;
+    width: 100%;
+    font-family: inherit;
+}
+
+#results-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    height: auto;
+    width: 100%;
+    font-size: 20px;
+    color: darkslategray;
+    text-align: center;
+    font-family: inherit;
+    margin-bottom: 5px;
+}
+
+#results-container div {
+    border: darkslategray 2px solid;
+    box-shadow: 5px 5px 5px grey;
+    background-color: gainsboro;
+    margin: 20px;
+    padding: 5px;
+    width: 250px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+}
+
+img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+}
+a {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkslategray;
+    text-decoration: none;
+}
+
+#more {
+    visibility: hidden;
+    margin: 0 0 5px 5px;
+}
