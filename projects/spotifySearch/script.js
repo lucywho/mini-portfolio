@@ -9,6 +9,9 @@
         var userInput = $("input[name=user-input]").val();
         var dropdownSelectVal = $("select").val();
         var baseUrl = "https://elegant-croissant.glitch.me/spotify";
+        $("#results-container").html(
+            "<em>please wait for data from <a>www.spotify.com</a></em>"
+        );
 
         $.ajax({
             url: baseUrl,
@@ -66,11 +69,11 @@
                 imgUrl =
                     "<a href =" +
                     items[i].external_urls.spotify +
-                    "> <img src =" +
+                    "> <img id='pic' src =" +
                     items[i].images[0].url +
                     "> </a>";
             } else {
-                imgUrl = "<img src='default.jpg' />";
+                imgUrl = "<img id='pic' src='default.jpg' />";
             }
 
             myHtml +=
@@ -78,6 +81,7 @@
                 items[i].external_urls.spotify +
                 "> " +
                 items[i].name +
+                "</br>" +
                 imgUrl +
                 "</a> </div>";
         }

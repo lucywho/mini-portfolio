@@ -32,4 +32,6 @@ app.get("/:project/description", (req, res) => {
     });
 });
 
-app.listen(8080, () => console.log("exp-handle-portfolio server running"));
+app.listen(process.env.PORT || 8080, () =>
+    console.log("mini-portfolio server running")
+);

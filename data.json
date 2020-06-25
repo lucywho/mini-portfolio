@@ -2,19 +2,19 @@
     {
         "title": "Kitty Carousel",
         "directory": "carousel-project",
-        "description": "An endless parade of cute kittens that will make you want to scratch your eyes out. Built in vanilla JavaScript."
+        "description": "An endless parade of cute kittens that will make you want to scratch your eyes out. Written in vanilla JavaScript."
     },
 
     {
         "title": "Connect 4",
         "directory": "connect4",
-        "description": "The classic two-player game, but purple. Built in JQuery."
+        "description": "The classic two-player game, but purple. Written in JQuery."
     },
 
     {
         "title": "Ticker Tape",
         "directory": "HeadlinesProj",
-        "description": "A scrolling list of doom of gloom from the early days of the plague in Europe. Built in vanilla JavaScript"
+        "description": "A scrolling list of doom of gloom from the early days of the plague in Europe. Written in vanilla JavaScript"
     },
 
     {
@@ -26,12 +26,12 @@
     {
         "title": "Sliding Panes",
         "directory": "panes",
-        "description": "Day and night photos of the Brandenburg Gate, Berlin. Built in JQuery."
+        "description": "Day and night photos of the Brandenburg Gate, Berlin. Written in JQuery."
     },
 
     {
-        "title": "Spotify Search",
+        "title": "Search Spotify",
         "directory": "spotifySearch",
-        "description": "Search spotify for artists or albums. Built in JQuery."
+        "description": "Search spotify for artists or albums. Written in JQuery."
     }
 ]
